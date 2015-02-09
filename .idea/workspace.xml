@@ -17,8 +17,8 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35bb16bc-934f-4cd5-ac42-46017e08a499" name="Failed commit: Default" comment="First commit">
-      <change type="DELETED" beforePath="C:\Users\Guillaume\AndroidStudioProjects\Labyrinthe\.idea\workspace.xml" afterPath="" />
+    <list default="true" id="35bb16bc-934f-4cd5-ac42-46017e08a499" name="Failed commit: Default" comment="First commits">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="Labyrinthe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -884,7 +884,11 @@
       <created>1423513382669</created>
       <updated>1423513382669</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commits">
+      <created>1423513406542</created>
+      <updated>1423513406542</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -938,7 +942,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="First commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
