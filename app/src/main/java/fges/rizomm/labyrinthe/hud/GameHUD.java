@@ -17,7 +17,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
      * This is called immediately after the surface is first created.
      * Implementations of this should start up whatever rendering code
      * they desire.  Note that only one thread can ever draw into
-     * a {@link Surface}, so you should not draw into the Surface here
+     * a {@link android.view.Surface}, so you should not draw into the Surface here
      * if your normal rendering will be in another thread.
      *
      * @param holder The SurfaceHolder whose surface is being created.
