@@ -6,6 +6,11 @@ import android.graphics.Color;
  * Created by GuillaumeVDH
  */
 public class Ball {
+    /*
+    This class allow you to create a ball.
+    Using the accelerometer, the player will be able to deplace it into the game until he reachs the end.
+     */
+
     //Radius of the ball
     public static final int RADIUS = 10;
 
