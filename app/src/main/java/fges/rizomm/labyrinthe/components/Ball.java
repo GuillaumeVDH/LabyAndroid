@@ -1,4 +1,4 @@
-package fges.rizomm.labyrinthe.modeles;
+package fges.rizomm.labyrinthe.components;
 
 import android.graphics.Color;
 

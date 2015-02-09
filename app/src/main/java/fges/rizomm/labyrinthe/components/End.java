@@ -1,4 +1,4 @@
-package fges.rizomm.labyrinthe.modeles;
+package fges.rizomm.labyrinthe.components;
 
 /**
  * Created by GuillaumeVDH
