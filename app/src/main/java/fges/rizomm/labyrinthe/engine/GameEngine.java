@@ -6,12 +6,11 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import fges.rizomm.labyrinthe.MainActivity;
+import fges.rizomm.labyrinthe.GameActivity;
 import fges.rizomm.labyrinthe.components.Ball;
 import fges.rizomm.labyrinthe.components.ABlock;
 import fges.rizomm.labyrinthe.components.End;
@@ -24,7 +23,7 @@ import fges.rizomm.labyrinthe.components.Trap;
 public class GameEngine {
     private Ball _ball = null;
     private List<ABlock> _blocks = new ArrayList<ABlock>();
-    private MainActivity _activity = null;
+    private GameActivity _activity = null;
 
     //Init sensors
     private SensorManager _sensorManager = null;
@@ -37,7 +36,7 @@ public class GameEngine {
         START OF METHODS DECLARATIONS
      */
 
-    public GameEngine(MainActivity view)     {
+    public GameEngine(GameActivity view)     {
         _activity = view;
         _sensorManager = (SensorManager) _activity.getBaseContext().getSystemService(Service.SENSOR_SERVICE);
         _sensor = _sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -69,13 +68,13 @@ public class GameEngine {
             if(_ball != null) {
                 //Update the position of the ball
                 _ball.updatePosition(x, y);
-                RectF hitbox = _ball.getRCollision();
+                RectF collision = _ball.getRCollision();
 
 
                 for (ABlock block : _blocks) {
 
                     RectF tmp = new RectF(block.getRectangle());
-                    if (tmp.intersect(tmp)) {
+                    if (tmp.intersect(collision)) {
                         if (block instanceof End) {
                             _activity.showDialog(1); //TODO
                         } else if (block instanceof Trap) {

@@ -22,9 +22,9 @@ import fges.rizomm.labyrinthe.components.Trap;
 public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
     private Ball _ball;
-    GameDraw _thread;
-    SurfaceHolder _surfaceHolder;
-    Paint _paint;
+    private GameDraw _thread;
+    private SurfaceHolder _surfaceHolder;
+    private Paint _paint;
     private List<ABlock> _blocks = null;
     /*
        END OF ATTRIBUTES DECLARATIONS
@@ -36,14 +36,16 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
         super(context);
         _surfaceHolder = getHolder();
         _surfaceHolder.addCallback(this);
+        _thread = new GameDraw();
 
         _paint = new Paint();
         _paint.setStyle(Paint.Style.FILL);
 
         _ball = new Ball();
-
-        _thread = new GameDraw();
-
+    }
+    public Ball getBall() { return _ball; }
+    public void setBall(Ball ball) {
+        _ball = ball;
     }
 
     public List<ABlock> getBlocks() { return _blocks; }
@@ -151,7 +153,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
         @Override
         public void run() {
-            Canvas canvas = null;
+            Canvas canvas;
             while(_draw) {
                 canvas = null;
 

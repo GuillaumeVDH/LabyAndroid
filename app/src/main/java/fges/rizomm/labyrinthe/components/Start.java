@@ -1,6 +1,9 @@
 package fges.rizomm.labyrinthe.components;
 
 import android.graphics.RectF;
+import android.os.Debug;
+
+import java.io.Console;
 
 /**
  * Created by GuillaumeVDH

@@ -14,7 +14,7 @@ public class Ball {
      */
 
     //Radius of the ball
-    public static final int RADIUS = 10;
+    public static final int RADIUS = 30;
 
     //Position
     private float _X;
@@ -51,9 +51,11 @@ public class Ball {
     //Init the position of the ball
     public void initStart(RectF start)
     {
-        this._rStart = start;
-        this._X = start.left + RADIUS;
-        this._Y = start.right + RADIUS;
+        _rStart = start;
+        _X = start.left + RADIUS;
+        _Y = start.right + RADIUS;
+        System.out.println("-------------INIT START at " + _X + " AND " + _Y);
+
     }
 
     // GETTERS
