@@ -32,7 +32,9 @@ public class GameEngine {
 
 
      /*
+        END OF ATTRIBUTES DECLARATIONS
     ------------------------------------------------------------------------------------------------
+        START OF METHODS DECLARATIONS
      */
 
     public GameEngine(MainActivity view)     {
@@ -219,9 +221,9 @@ public class GameEngine {
         _blocks.add(new Trap(19, 12));
         _blocks.add(new Trap(19, 13));
 
-        Start b = new Start(2, 2);
-        _ball = new Ball(b.getRectangle());
-        _blocks.add(b);
+        Start blockStart = new Start(2, 2);
+        _ball.initStart(new RectF(blockStart.getRectangle()));
+        _blocks.add(blockStart);
 
         _blocks.add(new End(8, 11));
 

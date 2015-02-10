@@ -37,11 +37,13 @@ public class Ball {
     private int _screenHeight = 0;
 
     /*
-    ------------------------------------------------------------------------------------------------
-     */
-    public Ball(RectF start)
+       END OF ATTRIBUTES DECLARATIONS
+   ------------------------------------------------------------------------------------------------
+       START OF METHODS DECLARATIONS
+    */
+
+    public Ball()
     {
-        this.initStart(start);
         _rCollision = new RectF();
     }
 
