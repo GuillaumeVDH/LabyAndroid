@@ -59,6 +59,8 @@ public class Ball {
     public float getY()         {   return this._Y; }
     public float getSpeedX()    {   return this._speedX; }
     public float getSpeedY()    {   return this._speedY; }
+    public RectF getRCollision(){   return this._rCollision; }
+
 
     //SETTERS
     public void setX(float x)

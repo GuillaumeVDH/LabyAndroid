@@ -5,7 +5,7 @@ import android.graphics.RectF;
 /**
  * Created by GuillaumeVDH
  */
-public class Start extends Block {
+public class Start extends ABlock {
     /*
     This class allow you to create a Start place for the ball.
     We can have only one start by level.

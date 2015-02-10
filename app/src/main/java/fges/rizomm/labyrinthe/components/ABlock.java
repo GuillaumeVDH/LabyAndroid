@@ -5,7 +5,7 @@ import android.graphics.RectF;
 /**
  * Created by GuillaumeVDH
  */
-abstract class Block {
+public abstract class ABlock {
     public static final float SIZE = Ball.RADIUS*2;
 
     protected float _X = 0;
@@ -13,7 +13,7 @@ abstract class Block {
 
     protected RectF _rectangle = null;
 
-    protected RectF getRectangle()
+    public RectF getRectangle()
     {
         return _rectangle;
     }
