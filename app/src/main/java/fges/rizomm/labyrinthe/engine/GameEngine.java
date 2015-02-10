@@ -67,9 +67,7 @@ public class GameEngine {
 
             if(_ball != null) {
                 //Update the position of the ball
-                _ball.updatePosition(x, y);
-                RectF collision = _ball.getRCollision();
-
+                RectF collision = _ball.updatePosition(x,y);
 
                 for (ABlock block : _blocks) {
 

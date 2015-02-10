@@ -51,9 +51,9 @@ public class Ball {
     //Init the position of the ball
     public void initStart(RectF start)
     {
-        _rStart = start;
-        _X = start.left + RADIUS;
-        _Y = start.right + RADIUS;
+        this._rStart = start;
+        this._X = start.left + RADIUS;
+        this._Y = start.top + RADIUS;
         System.out.println("-------------INIT START at " + _X + " AND " + _Y);
 
     }
@@ -118,7 +118,7 @@ public class Ball {
     }
 
     /* UPDATE */
-    public void updatePosition(float x, float y)
+    public RectF updatePosition(float x, float y)
     {
         _speedX += x / SPEED_REDUCER;
         _speedY += y / SPEED_REDUCER;
@@ -136,14 +136,16 @@ public class Ball {
         this.setX(_X + _speedY);
         this.setY(_Y + _speedX);
         _rCollision.set(_X - RADIUS, _Y - RADIUS, _X + RADIUS, _Y + RADIUS);
+
+        return _rCollision;
     }
 
     public void resetBall()
     {
         _speedX = 0;
         _speedY = 0;
-        _X = _rStart.left + RADIUS;
-        _Y = _rStart.top + RADIUS;
+        this._X = _rStart.left + RADIUS;
+        this._Y = _rStart.top + RADIUS;
     }
 
 }

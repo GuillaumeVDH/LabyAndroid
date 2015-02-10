@@ -68,7 +68,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
         _thread.start();
         if(_ball != null ) {
             _ball.setHeight(getHeight());
-            _ball.setHeight(getWidth());
+            _ball.setWidth(getWidth());
         }
     }
 
@@ -132,7 +132,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
         //Draw the ball
         if(_ball != null) {
             _paint.setColor(Color.MAGENTA);
-            canvas.drawCircle(_ball.getX(), _ball.getX(), _ball.RADIUS, _paint);
+            canvas.drawCircle(_ball.getX(), _ball.getY(), _ball.RADIUS, _paint);
         }
     }
 
