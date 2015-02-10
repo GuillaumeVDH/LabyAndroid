@@ -11,15 +11,24 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!-- MainActivity screen -->
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-             >
-
+            android:label="@string/app_name" >
         </activity>
+        <!-- GameActivity screen -->
         <activity
             android:name=".GameActivity"
             android:label="@string/title_activity_game"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
