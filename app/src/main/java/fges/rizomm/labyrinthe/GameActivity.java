@@ -1,5 +1,8 @@
 package fges.rizomm.labyrinthe;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -70,5 +73,37 @@ public class GameActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public Dialog onCreateDialog (int id) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        switch(id) {
+            case 1:
+                builder.setCancelable(false)
+                        .setTitle("VICTORY!")
+                        .setMessage("You succeed azvoing all the traps! ")
+                        .setNeutralButton("Restart", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                _gameEngine.reset();
+                                _gameEngine.resume();
+                            }
+                        });
+                break;
+
+            case 0:
+                builder.setCancelable(false)
+                        .setTitle("GAME OVER!")
+                        .setMessage("You're not yet ready for victory. But keep up, give another try!")
+                        .setNeutralButton("Try again", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                _gameEngine.reset();
+                                _gameEngine.resume();
+                            }
+                        });
+        }
+        return builder.create();
     }
 }
