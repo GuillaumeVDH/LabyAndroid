@@ -95,32 +95,32 @@ public class GameEngine {
     public List<ABlock> buildGame() {
         _blocks = new ArrayList<ABlock>();
 
-        _blocks.add(new Trap(0, 0));
-        _blocks.add(new Trap(0, 1));
-        _blocks.add(new Trap(0, 2));
-        _blocks.add(new Trap(0, 3));
-        _blocks.add(new Trap(0, 4));
-        _blocks.add(new Trap(0, 5));
-        _blocks.add(new Trap(0, 6));
-        _blocks.add(new Trap(0, 7));
-        _blocks.add(new Trap(0, 8));
-        _blocks.add(new Trap(0, 9));
-        _blocks.add(new Trap(0, 10));
-        _blocks.add(new Trap(0, 11));
-        _blocks.add(new Trap(0, 12));
-        _blocks.add(new Trap(0, 13));
+        _blocks.add(new Wall(0, 0));
+        _blocks.add(new Wall(0, 1));
+        _blocks.add(new Wall(0, 2));
+        _blocks.add(new Wall(0, 3));
+        _blocks.add(new Wall(0, 4));
+        _blocks.add(new Wall(0, 5));
+        _blocks.add(new Wall(0, 6));
+        _blocks.add(new Wall(0, 7));
+        _blocks.add(new Wall(0, 8));
+        _blocks.add(new Wall(0, 9));
+        _blocks.add(new Wall(0, 10));
+        _blocks.add(new Wall(0, 11));
+        _blocks.add(new Wall(0, 12));
+        _blocks.add(new Wall(0, 13));
 
-        _blocks.add(new Trap(1, 0));
-        _blocks.add(new Trap(1, 13));
+        _blocks.add(new Wall(1, 0));
+        _blocks.add(new Wall(1, 13));
 
-        _blocks.add(new Trap(2, 0));
-        _blocks.add(new Trap(2, 13));
+        _blocks.add(new Wall(2, 0));
+        _blocks.add(new Wall(2, 13));
 
-        _blocks.add(new Trap(3, 0));
-        _blocks.add(new Trap(3, 13));
+        _blocks.add(new Wall(3, 0));
+        _blocks.add(new Wall(3, 13));
 
-        _blocks.add(new Trap(4, 0));
-        _blocks.add(new Trap(4, 1));
+        _blocks.add(new Wall(4, 0));
+        _blocks.add(new Wall(4, 1));
         _blocks.add(new Wall(4, 2));
         _blocks.add(new Wall(4, 3));
         _blocks.add(new Wall(4, 4));
@@ -128,98 +128,98 @@ public class GameEngine {
         _blocks.add(new Wall(4, 6));
         _blocks.add(new Wall(4, 7));
         _blocks.add(new Wall(4, 8));
-        _blocks.add(new Trap(4, 9));
-        _blocks.add(new Trap(4, 10));
-        _blocks.add(new Trap(4, 13));
+        _blocks.add(new Wall(4, 9));
+        _blocks.add(new Wall(4, 10));
+        _blocks.add(new Wall(4, 13));
 
-        _blocks.add(new Trap(5, 0));
-        _blocks.add(new Trap(5, 13));
+        _blocks.add(new Wall(5, 0));
+        _blocks.add(new Wall(5, 13));
 
-        _blocks.add(new Trap(6, 0));
-        _blocks.add(new Trap(6, 13));
+        _blocks.add(new Wall(6, 0));
+        _blocks.add(new Wall(6, 13));
 
-        _blocks.add(new Trap(7, 0));
-        _blocks.add(new Trap(7, 1));
-        _blocks.add(new Trap(7, 2));
-        _blocks.add(new Trap(7, 5));
-        _blocks.add(new Trap(7, 6));
-        _blocks.add(new Trap(7, 9));
-        _blocks.add(new Trap(7, 10));
-        _blocks.add(new Trap(7, 11));
-        _blocks.add(new Trap(7, 12));
-        _blocks.add(new Trap(7, 13));
+        _blocks.add(new Wall(7, 0));
+        _blocks.add(new Wall(7, 1));
+        _blocks.add(new Wall(7, 2));
+        _blocks.add(new Wall(7, 5));
+        _blocks.add(new Wall(7, 6));
+        _blocks.add(new Wall(7, 9));
+        _blocks.add(new Wall(7, 10));
+        _blocks.add(new Wall(7, 11));
+        _blocks.add(new Wall(7, 12));
+        _blocks.add(new Wall(7, 13));
 
-        _blocks.add(new Trap(8, 0));
-        _blocks.add(new Trap(8, 5));
-        _blocks.add(new Trap(8, 9));
-        _blocks.add(new Trap(8, 13));
+        _blocks.add(new Wall(8, 0));
+        _blocks.add(new Wall(8, 5));
+        _blocks.add(new Wall(8, 9));
+        _blocks.add(new Wall(8, 13));
 
-        _blocks.add(new Trap(9, 0));
-        _blocks.add(new Trap(9, 5));
-        _blocks.add(new Trap(9, 9));
-        _blocks.add(new Trap(9, 13));
+        _blocks.add(new Wall(9, 0));
+        _blocks.add(new Wall(9, 5));
+        _blocks.add(new Wall(9, 9));
+        _blocks.add(new Wall(9, 13));
 
-        _blocks.add(new Trap(10, 0));
-        _blocks.add(new Trap(10, 5));
-        _blocks.add(new Trap(10, 9));
-        _blocks.add(new Trap(10, 13));
+        _blocks.add(new Wall(10, 0));
+        _blocks.add(new Wall(10, 5));
+        _blocks.add(new Wall(10, 9));
+        _blocks.add(new Wall(10, 13));
 
-        _blocks.add(new Trap(11, 0));
-        _blocks.add(new Trap(11, 5));
-        _blocks.add(new Trap(11, 9));
-        _blocks.add(new Trap(11, 13));
+        _blocks.add(new Wall(11, 0));
+        _blocks.add(new Wall(11, 5));
+        _blocks.add(new Wall(11, 9));
+        _blocks.add(new Wall(11, 13));
 
-        _blocks.add(new Trap(12, 0));
-        _blocks.add(new Trap(12, 1));
-        _blocks.add(new Trap(12, 2));
-        _blocks.add(new Trap(12, 3));
-        _blocks.add(new Trap(12, 4));
-        _blocks.add(new Trap(12, 5));
-        _blocks.add(new Trap(12, 9));
-        _blocks.add(new Trap(12, 8));
-        _blocks.add(new Trap(12, 13));
+        _blocks.add(new Wall(12, 0));
+        _blocks.add(new Wall(12, 1));
+        _blocks.add(new Wall(12, 2));
+        _blocks.add(new Wall(12, 3));
+        _blocks.add(new Wall(12, 4));
+        _blocks.add(new Wall(12, 5));
+        _blocks.add(new Wall(12, 9));
+        _blocks.add(new Wall(12, 8));
+        _blocks.add(new Wall(12, 13));
 
-        _blocks.add(new Trap(13, 0));
-        _blocks.add(new Trap(13, 8));
-        _blocks.add(new Trap(13, 13));
+        _blocks.add(new Wall(13, 0));
+        _blocks.add(new Wall(13, 8));
+        _blocks.add(new Wall(13, 13));
 
-        _blocks.add(new Trap(14, 0));
-        _blocks.add(new Trap(14, 8));
-        _blocks.add(new Trap(14, 13));
+        _blocks.add(new Wall(14, 0));
+        _blocks.add(new Wall(14, 8));
+        _blocks.add(new Wall(14, 13));
 
-        _blocks.add(new Trap(15, 0));
-        _blocks.add(new Trap(15, 8));
-        _blocks.add(new Trap(15, 13));
+        _blocks.add(new Wall(15, 0));
+        _blocks.add(new Wall(15, 8));
+        _blocks.add(new Wall(15, 13));
 
-        _blocks.add(new Trap(16, 0));
-        _blocks.add(new Trap(16, 4));
-        _blocks.add(new Trap(16, 5));
-        _blocks.add(new Trap(16, 6));
-        _blocks.add(new Trap(16, 7));
-        _blocks.add(new Trap(16, 8));
-        _blocks.add(new Trap(16, 9));
-        _blocks.add(new Trap(16, 13));
+        _blocks.add(new Wall(16, 0));
+        _blocks.add(new Wall(16, 4));
+        _blocks.add(new Wall(16, 5));
+        _blocks.add(new Wall(16, 6));
+        _blocks.add(new Wall(16, 7));
+        _blocks.add(new Wall(16, 8));
+        _blocks.add(new Wall(16, 9));
+        _blocks.add(new Wall(16, 13));
 
-        _blocks.add(new Trap(17, 0));
-        _blocks.add(new Trap(17, 13));
+        _blocks.add(new Wall(17, 0));
+        _blocks.add(new Wall(17, 13));
 
-        _blocks.add(new Trap(18, 0));
-        _blocks.add(new Trap(18, 13));
+        _blocks.add(new Wall(18, 0));
+        _blocks.add(new Wall(18, 13));
 
-        _blocks.add(new Trap(19, 0));
-        _blocks.add(new Trap(19, 1));
-        _blocks.add(new Trap(19, 2));
-        _blocks.add(new Trap(19, 3));
-        _blocks.add(new Trap(19, 4));
-        _blocks.add(new Trap(19, 5));
-        _blocks.add(new Trap(19, 6));
-        _blocks.add(new Trap(19, 7));
-        _blocks.add(new Trap(19, 8));
-        _blocks.add(new Trap(19, 9));
-        _blocks.add(new Trap(19, 10));
-        _blocks.add(new Trap(19, 11));
-        _blocks.add(new Trap(19, 12));
-        _blocks.add(new Trap(19, 13));
+        _blocks.add(new Wall(19, 0));
+        _blocks.add(new Wall(19, 1));
+        _blocks.add(new Wall(19, 2));
+        _blocks.add(new Wall(19, 3));
+        _blocks.add(new Wall(19, 4));
+        _blocks.add(new Wall(19, 5));
+        _blocks.add(new Wall(19, 6));
+        _blocks.add(new Wall(19, 7));
+        _blocks.add(new Wall(19, 8));
+        _blocks.add(new Wall(19, 9));
+        _blocks.add(new Wall(19, 10));
+        _blocks.add(new Wall(19, 11));
+        _blocks.add(new Wall(19, 12));
+        _blocks.add(new Wall(19, 13));
 
         Start blockStart = new Start(2, 2);
         _ball.initStart(new RectF(blockStart.getRectangle()));

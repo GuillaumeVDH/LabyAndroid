@@ -149,9 +149,8 @@ public class Ball {
     }
 
     public void Bounce() {
-        _speedX = -1;
-        _speedY = -1;
-
+        _speedX = - Math.abs(_speedX);
+        _speedY = - Math.abs(_speedY);
     }
 
 }
