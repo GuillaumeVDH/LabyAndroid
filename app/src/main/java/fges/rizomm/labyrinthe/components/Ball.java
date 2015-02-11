@@ -54,8 +54,6 @@ public class Ball {
         this._rStart = start;
         this._X = start.left + RADIUS;
         this._Y = start.top + RADIUS;
-        System.out.println("-------------INIT START at " + _X + " AND " + _Y);
-
     }
 
     // GETTERS
@@ -148,9 +146,16 @@ public class Ball {
         this._Y = _rStart.top + RADIUS;
     }
 
-    public void Bounce() {
-        _speedX = - Math.abs(_speedX);
-        _speedY = - Math.abs(_speedY);
+    public void Bounce(float previousX, float previousY) {
+        _X = previousX;
+        _Y = previousY;
+        /*
+        if(_speedX > _speedY)
+            _speedX = - Math.abs(_speedY);
+        else if(_speedX < _speedY)
+            _speedY = - Math.abs(_speedY);
+        */
+        _speedX = - Math.abs(_speedY)+1;
+        _speedY = - Math.abs(_speedY)+1;
     }
-
 }

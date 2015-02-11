@@ -67,6 +67,8 @@ public class GameEngine {
             float y = event.values[1];
 
             if(_ball != null) {
+                float oldX = _ball.getX();
+                float oldY =_ball.getY();
                 //Update the position of the ball
                 RectF collision = _ball.updatePosition(x,y);
 
@@ -79,7 +81,7 @@ public class GameEngine {
                         } else if (block.getType() == ABlock.Type.TRAP) {
                             _activity.showDialog(0);
                         } else if (block.getType() == ABlock.Type.WALL) {
-                            _ball.Bounce();
+                            _ball.Bounce(oldX, oldY);
                         }
                     }
                 }
