@@ -10,6 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        android:contentDescription="Splash screen" />
 
 </RelativeLayout>

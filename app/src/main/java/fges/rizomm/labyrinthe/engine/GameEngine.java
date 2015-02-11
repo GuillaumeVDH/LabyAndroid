@@ -16,6 +16,7 @@ import fges.rizomm.labyrinthe.components.ABlock;
 import fges.rizomm.labyrinthe.components.End;
 import fges.rizomm.labyrinthe.components.Start;
 import fges.rizomm.labyrinthe.components.Trap;
+import fges.rizomm.labyrinthe.components.Wall;
 
 /**
  * Created by GuillaumeVDH
@@ -73,10 +74,12 @@ public class GameEngine {
 
                     RectF tmp = new RectF(block.getRectangle());
                     if (tmp.intersect(collision)) {
-                        if (block instanceof End) {
-                            _activity.showDialog(1); //TODO
-                        } else if (block instanceof Trap) {
-                            _activity.showDialog(0); //TODO
+                        if (block.getType() == ABlock.Type.END) {
+                            _activity.showDialog(1);
+                        } else if (block.getType() == ABlock.Type.TRAP) {
+                            _activity.showDialog(0);
+                        } else if (block.getType() == ABlock.Type.WALL) {
+                            _ball.Bounce();
                         }
                     }
                 }
@@ -118,13 +121,13 @@ public class GameEngine {
 
         _blocks.add(new Trap(4, 0));
         _blocks.add(new Trap(4, 1));
-        _blocks.add(new Trap(4, 2));
-        _blocks.add(new Trap(4, 3));
-        _blocks.add(new Trap(4, 4));
-        _blocks.add(new Trap(4, 5));
-        _blocks.add(new Trap(4, 6));
-        _blocks.add(new Trap(4, 7));
-        _blocks.add(new Trap(4, 8));
+        _blocks.add(new Wall(4, 2));
+        _blocks.add(new Wall(4, 3));
+        _blocks.add(new Wall(4, 4));
+        _blocks.add(new Wall(4, 5));
+        _blocks.add(new Wall(4, 6));
+        _blocks.add(new Wall(4, 7));
+        _blocks.add(new Wall(4, 8));
         _blocks.add(new Trap(4, 9));
         _blocks.add(new Trap(4, 10));
         _blocks.add(new Trap(4, 13));

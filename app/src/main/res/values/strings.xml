@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Labyrinthe</string>
+    <string name="app_name">The Maze</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_game">The Maze - Game</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_dialog_fragment">DialogFragment</string>
 
 </resources>

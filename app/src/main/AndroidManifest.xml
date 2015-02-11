@@ -11,6 +11,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <!-- MainActivity screen -->
         <activity
             android:name=".MainActivity"
@@ -21,20 +22,24 @@
             android:name=".GameActivity"
             android:label="@string/title_activity_game"
             android:screenOrientation="landscape" >
-
         </activity>
-        <!-- Splash screen -->
+        
+        <!-- Splash screen -->
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
-            android:theme="@style/FullscreenTheme"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".hud.DialogFragment"
+            android:label="@string/title_activity_dialog_fragment" >
         </activity>
     </application>
 

@@ -1,7 +1,9 @@
 package fges.rizomm.labyrinthe;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -13,10 +15,11 @@ import java.util.List;
 import fges.rizomm.labyrinthe.components.ABlock;
 import fges.rizomm.labyrinthe.components.Ball;
 import fges.rizomm.labyrinthe.engine.GameEngine;
+import fges.rizomm.labyrinthe.hud.GameDialog;
 import fges.rizomm.labyrinthe.hud.GameHUD;
 
 
-public class GameActivity extends ActionBarActivity {
+public class GameActivity extends Activity {
 
     private GameEngine _gameEngine = null;
     private GameHUD _gameHUD = null;
