@@ -83,9 +83,10 @@ public class GameActivity extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         switch(id) {
             case 1:
+                _gameEngine.stopSensor();
                 builder.setCancelable(false)
                         .setTitle("VICTORY!")
-                        .setMessage("You succeed azvoing all the traps! ")
+                        .setMessage("You succeed avoing all the traps! ")
                         .setNeutralButton("Restart", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -96,6 +97,7 @@ public class GameActivity extends Activity {
                 break;
 
             case 0:
+                _gameEngine.stopSensor();
                 builder.setCancelable(false)
                         .setTitle("GAME OVER!")
                         .setMessage("You're not yet ready for victory. But keep up, give another try!")
