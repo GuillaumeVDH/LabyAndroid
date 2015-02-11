@@ -1,5 +1,6 @@
 package fges.rizomm.labyrinthe.components;
 
+import android.graphics.Color;
 import android.graphics.RectF;
 
 /**
@@ -14,5 +15,8 @@ public class Trap extends ABlock {
     public Trap(int x, int y)
     {
         super(x,y);
+        _color = Color.GRAY;
+        _type = Type.TRAP;
     }
+
 }

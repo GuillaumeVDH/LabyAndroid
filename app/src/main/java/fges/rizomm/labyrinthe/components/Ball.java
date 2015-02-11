@@ -23,9 +23,9 @@ public class Ball {
     //Speed
     private float _speedX;
     private float _speedY;
-    private static final float MAX_SPEED = 20f;
+    private static final float MAX_SPEED = 8f;
     private static final float BOUNCE = 2f;
-    private static final float SPEED_REDUCER = 10f;
+    private static final float SPEED_REDUCER = 1f;
 
     //Color
     private int _color = Color.BLUE;
@@ -146,6 +146,12 @@ public class Ball {
         _speedY = 0;
         this._X = _rStart.left + RADIUS;
         this._Y = _rStart.top + RADIUS;
+    }
+
+    public void Bounce() {
+        _speedX = -1;
+        _speedY = -1;
+
     }
 
 }

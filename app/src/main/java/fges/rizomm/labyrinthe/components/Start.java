@@ -1,5 +1,6 @@
 package fges.rizomm.labyrinthe.components;
 
+import android.graphics.Color;
 import android.graphics.RectF;
 import android.os.Debug;
 
@@ -17,5 +18,7 @@ public class Start extends ABlock {
     public Start(int x, int y)
     {
         super(x,y);
+        _color = Color.WHITE;
+        _type = Type.START;
     }
 }

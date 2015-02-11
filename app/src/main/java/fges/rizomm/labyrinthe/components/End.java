@@ -1,5 +1,6 @@
 package fges.rizomm.labyrinthe.components;
 
+import android.graphics.Color;
 import android.graphics.RectF;
 
 /**
@@ -14,5 +15,7 @@ public class End extends ABlock {
     public End(int x, int y)
     {
         super(x,y);
+        _color = Color.RED;
+        _type = Type.END;
     }
 }

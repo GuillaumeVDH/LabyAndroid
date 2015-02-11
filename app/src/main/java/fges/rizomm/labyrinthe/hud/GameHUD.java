@@ -118,13 +118,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
         {
             for(ABlock block : _blocks)
             {
-                if (block instanceof Start) {
-                    _paint.setColor(Color.WHITE);
-                } else if (block instanceof End) {
-                    _paint.setColor(Color.RED);
-                } else if (block instanceof Trap) {
-                    _paint.setColor(Color.BLACK);
-                }
+                _paint.setColor(block.getColor());
                 canvas.drawRect(block.getRectangle(), _paint);
             }
         }
