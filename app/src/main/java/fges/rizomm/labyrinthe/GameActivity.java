@@ -3,9 +3,7 @@ package fges.rizomm.labyrinthe;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.FragmentManager;
 import android.content.DialogInterface;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,7 +13,6 @@ import java.util.List;
 import fges.rizomm.labyrinthe.components.ABlock;
 import fges.rizomm.labyrinthe.components.Ball;
 import fges.rizomm.labyrinthe.engine.GameEngine;
-import fges.rizomm.labyrinthe.hud.GameDialog;
 import fges.rizomm.labyrinthe.hud.GameHUD;
 
 

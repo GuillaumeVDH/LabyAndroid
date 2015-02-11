@@ -12,6 +12,8 @@
     <shared>
       <config>
         <devices>
+          <device id="Nexus One" />
+          <device id="Nexus S" />
           <device id="Nexus 5" />
         </devices>
       </config>
@@ -19,6 +21,12 @@
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+        <config>
+          <state>Landscape</state>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
@@ -34,9 +42,21 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: fges.rizomm.labyrinthe" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35bb16bc-934f-4cd5-ac42-46017e08a499" name="Failed commit: Default" comment="Less shitty">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Ball.java" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/engine/GameEngine.java" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/engine/GameEngine.java" />
+    <list default="true" id="35bb16bc-934f-4cd5-ac42-46017e08a499" name="Failed commit: Default" comment="Algo updated">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/MenuActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/SettingsActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_menu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/GameActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/GameActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_dialog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Labyrinthe.iws" />
@@ -63,97 +83,111 @@
       <file leaf-file-name="GameActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/GameActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="914" max-vertical-offset="1717">
-              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
-              <folding>
-                <element signature="e#2556#2881#0" expanded="true" />
-                <element signature="e#2854#2855#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ball.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Ball.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7930435" vertical-offset="1975" max-vertical-offset="2584">
-              <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1666">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="End.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/End.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Trap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Trap.java">
+      <file leaf-file-name="MenuActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/MenuActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1207">
+              <caret line="64" column="92" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/SettingsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="935">
+              <caret line="31" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_settings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.62963" vertical-offset="98" max-vertical-offset="680">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplashScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="442">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_menu.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#174#209#0" expanded="true" />
+                <element signature="e#699#719#0" expanded="true" />
+                <element signature="e#1075#1095#0" expanded="true" />
+                <element signature="e#1251#1274#0" expanded="true" />
+                <element signature="e#1426#1445#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameDialog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDialog.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="646">
-              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.3090909" vertical-offset="0" max-vertical-offset="550">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ABlock.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/ABlock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="765">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameHUD.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameHUD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2669">
-              <caret line="141" column="50" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/engine/GameEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2553" max-vertical-offset="4080">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#774#782#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-                <element signature="e#1532#1533#0" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -734,12 +768,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Block.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDraw.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/fges/rizomm/labyrinthe/hud/DialogFragmentTest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/DialogFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dialog_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/ABlock.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Start.java" />
@@ -750,6 +780,18 @@
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/engine/GameEngine.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/GameActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Ball.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/DialogFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/MenuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" />
       </list>
     </option>
   </component>
@@ -810,6 +852,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="values" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labyrinthe" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strings.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -961,28 +1025,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labyrinthe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labyrinthe" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1310,7 +1352,11 @@
       <created>1423685907025</created>
       <updated>1423685907025</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Algo updated">
+      <created>1423686237057</created>
+      <updated>1423686237057</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1383,7 +1429,8 @@
     <MESSAGE value="Implemented walls and give a try (little POC ingame) with no-brain algo ;)" />
     <MESSAGE value="Less but still shitty bounce; Walls are now EVERYWHERE!" />
     <MESSAGE value="Stopping sensor when a pop-up is shown + minor fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stopping sensor when a pop-up is shown + minor fix" />
+    <MESSAGE value="Algo updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Algo updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1395,10 +1442,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1360">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#2556#2881#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1425,7 +1469,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="799">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#1463#1503#0" expanded="true" />
+            <element signature="e#1615#1644#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1532,7 +1579,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="527">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#1463#1503#0" expanded="true" />
+            <element signature="e#1615#1644#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,14 +1664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5026087" vertical-offset="0" max-vertical-offset="714">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1633,30 +1675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="884">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="289">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1664,14 +1682,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="646">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1733,29 +1743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameHUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2669">
-          <caret line="141" column="50" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="914" max-vertical-offset="1717">
-          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
-          <folding>
-            <element signature="e#2556#2881#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/engine/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2553" max-vertical-offset="4080">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+          <caret line="165" column="36" selection-start-line="165" selection-start-column="36" selection-end-line="165" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#774#782#0" expanded="true" />
@@ -1769,10 +1760,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameHUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="2669">
+          <caret line="141" column="50" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.48" vertical-offset="487" max-vertical-offset="1037">
+          <caret line="47" column="61" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/GameDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/components/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7930435" vertical-offset="1975" max-vertical-offset="2584">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1975" max-vertical-offset="2584">
           <caret line="158" column="8" selection-start-line="158" selection-start-column="8" selection-end-line="158" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/GameActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1666">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#174#209#0" expanded="true" />
+            <element signature="e#699#719#0" expanded="true" />
+            <element signature="e#1075#1095#0" expanded="true" />
+            <element signature="e#1251#1274#0" expanded="true" />
+            <element signature="e#1426#1445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/MenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1207">
+          <caret line="64" column="92" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/hud/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="935">
+          <caret line="31" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08869565" vertical-offset="0" max-vertical-offset="575">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.62963" vertical-offset="98" max-vertical-offset="680">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59130436" vertical-offset="442" max-vertical-offset="1020">
+          <caret line="46" column="19" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="65" />
+          <folding>
+            <element signature="e#1463#1503#0" expanded="true" />
+            <element signature="e#1615#1644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fges/rizomm/labyrinthe/SplashScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="442">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3090909" vertical-offset="0" max-vertical-offset="550">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import fges.rizomm.labyrinthe.R;
 
-public class GameDialog extends DialogFragment {
+public class GameDialog extends android.app.DialogFragment {
     public GameDialog() {}
 
     /**

@@ -1,5 +1,6 @@
 package fges.rizomm.labyrinthe;
 
+import fges.rizomm.labyrinthe.hud.MenuActivity;
 import fges.rizomm.labyrinthe.util.SystemUiHider;
 
 import android.annotation.TargetApi;
@@ -30,7 +31,7 @@ public class SplashScreen extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, GameActivity.class);
+                Intent intent = new Intent(SplashScreen.this, MenuActivity.class);
                 startActivity(intent);
 
                 finish(); //Close this activity

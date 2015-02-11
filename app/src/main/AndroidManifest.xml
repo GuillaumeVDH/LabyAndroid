@@ -38,8 +38,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".hud.DialogFragment"
+            android:name=".hud.GameDialog"
             android:label="@string/title_activity_dialog_fragment" >
+        </activity>
+        <activity
+            android:name=".hud.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".hud.SettingsActivity"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 

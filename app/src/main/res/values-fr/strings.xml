@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Le laby</string>
+    <string name="hello_world">Bonjour tout le monde!</string>
+    <string name="action_settings">Options</string>
+    <string name="title_activity_game">The Maze - Le jeu</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_dialog_fragment">Pop Up</string>
+    <string name="title_activity_settings">Options</string>
+
+
+    <string name="menu_title">Menu</string>
+    <string name="menu_start">Jouer</string>
+    <string name="menu_settings">Options</string>
+    <string name="menu_about">À propos</string>
+    <string name="menu_exit">Quitter</string>
+
+    <string name="settings_button_validate">Valider</string>
+
+</resources>
