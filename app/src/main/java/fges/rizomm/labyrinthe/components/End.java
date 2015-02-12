@@ -15,7 +15,7 @@ public class End extends ABlock {
     public End(int x, int y)
     {
         super(x,y);
-        _color = Color.RED;
+        _color = Color.parseColor("#D32F2F");
         _type = Type.END;
     }
 }

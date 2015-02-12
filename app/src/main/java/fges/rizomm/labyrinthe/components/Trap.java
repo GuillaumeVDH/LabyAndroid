@@ -14,8 +14,7 @@ public class Trap extends ABlock {
     public Trap(int x, int y)
     {
         super(x,y);
-        _color = Color.BLACK;
-        _type = Type.WALL;
+        _color = Color.parseColor("#212121");
+        _type = Type.TRAP;
     }
-
 }

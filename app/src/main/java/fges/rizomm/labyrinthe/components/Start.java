@@ -18,7 +18,7 @@ public class Start extends ABlock {
     public Start(int x, int y)
     {
         super(x,y);
-        _color = Color.WHITE;
+        _color = Color.TRANSPARENT;
         _type = Type.START;
     }
 }

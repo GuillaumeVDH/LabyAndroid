@@ -10,7 +10,7 @@ import java.util.Enumeration;
  */
 public abstract class ABlock {
     public static final float SIZE = Ball.RADIUS*2;
-    public static enum Type { START, END, TRAP, WALL }
+    public static enum Type { START, END, TRAP, HOLE }
 
     protected float _X = 0;
     protected float _Y = 0;

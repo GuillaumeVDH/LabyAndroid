@@ -108,7 +108,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawColor(Color.DKGRAY);
+        canvas.drawColor(Color.parseColor("#727272"));
 
         //Draw the game
         if(_blocks != null)
@@ -122,7 +122,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
         //Draw the ball
         if(_ball != null) {
-            _paint.setColor(Color.MAGENTA);
+            _paint.setColor(Color.parseColor("#448AFF"));
             canvas.drawCircle(_ball.getX(), _ball.getY(), _ball.RADIUS, _paint);
         }
     }

@@ -15,8 +15,8 @@ public class Hole extends ABlock {
     public Hole(int x, int y)
     {
         super(x,y);
-        _color = Color.GRAY;
-        _type = Type.TRAP;
+        _color = Color.parseColor("#B6B6B6");
+        _type = Type.HOLE;
     }
 
 }

@@ -78,9 +78,9 @@ public class GameEngine {
                     if (tmp.intersect(collision)) {
                         if (block.getType() == ABlock.Type.END) {
                             _activity.showDialog(1);
-                        } else if (block.getType() == ABlock.Type.TRAP) {
+                        } else if (block.getType() == ABlock.Type.HOLE) {
                             _activity.showDialog(0);
-                        } else if (block.getType() == ABlock.Type.WALL) {
+                        } else if (block.getType() == ABlock.Type.TRAP) {
                             _ball.Bounce(oldX, oldY);
                         }
                     }
