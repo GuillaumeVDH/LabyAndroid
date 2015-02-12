@@ -1,7 +1,6 @@
 package fges.rizomm.labyrinthe.components;
 
 import android.graphics.Color;
-import android.graphics.RectF;
 
 /**
  * Created by GuillaumeVDH
@@ -9,14 +8,14 @@ import android.graphics.RectF;
 public class Trap extends ABlock {
     /*
     This class allow you to create a Trap.
-    When the ball roll over a trap, the ball fall into it. It's a game over!
-     */
+    If the ball meet it, she will bounce to move away!
+    */
 
     public Trap(int x, int y)
     {
         super(x,y);
-        _color = Color.GRAY;
-        _type = Type.TRAP;
+        _color = Color.BLACK;
+        _type = Type.WALL;
     }
 
 }

@@ -14,9 +14,9 @@ import fges.rizomm.labyrinthe.GameActivity;
 import fges.rizomm.labyrinthe.components.Ball;
 import fges.rizomm.labyrinthe.components.ABlock;
 import fges.rizomm.labyrinthe.components.End;
+import fges.rizomm.labyrinthe.components.Hole;
 import fges.rizomm.labyrinthe.components.Start;
 import fges.rizomm.labyrinthe.components.Trap;
-import fges.rizomm.labyrinthe.components.Wall;
 
 /**
  * Created by GuillaumeVDH
@@ -97,137 +97,153 @@ public class GameEngine {
     public List<ABlock> buildGame() {
         _blocks = new ArrayList<ABlock>();
 
-        _blocks.add(new Trap(0, 0));
-        _blocks.add(new Trap(0, 1));
-        _blocks.add(new Trap(0, 2));
-        _blocks.add(new Trap(0, 3));
-        _blocks.add(new Trap(0, 4));
-        _blocks.add(new Trap(0, 5));
-        _blocks.add(new Trap(0, 6));
-        _blocks.add(new Trap(0, 7));
-        _blocks.add(new Trap(0, 8));
-        _blocks.add(new Trap(0, 9));
-        _blocks.add(new Trap(0, 10));
-        _blocks.add(new Trap(0, 11));
-        _blocks.add(new Trap(0, 12));
-        _blocks.add(new Trap(0, 13));
+        _blocks.add(new Hole(0, 0));
+        _blocks.add(new Hole(0, 1));
+        _blocks.add(new Hole(0, 2));
+        _blocks.add(new Hole(0, 3));
+        _blocks.add(new Hole(0, 4));
+        _blocks.add(new Hole(0, 5));
+        _blocks.add(new Hole(0, 6));
+        _blocks.add(new Hole(0, 7));
+        _blocks.add(new Hole(0, 8));
+        _blocks.add(new Hole(0, 9));
+        _blocks.add(new Hole(0, 10));
+        _blocks.add(new Hole(0, 11));
+        _blocks.add(new Hole(0, 12));
+        _blocks.add(new Hole(0, 13));
+        _blocks.add(new Hole(0, 14));
 
-        _blocks.add(new Trap(1, 0));
+        _blocks.add(new Hole(1, 0));
+        _blocks.add(new Trap(1, 11));
+        _blocks.add(new Trap(1, 12));
         _blocks.add(new Trap(1, 13));
+        _blocks.add(new Hole(1, 14));
 
-        _blocks.add(new Trap(2, 0));
-        _blocks.add(new Trap(2, 13));
+        _blocks.add(new Hole(2, 0));
+        _blocks.add(new Hole(2, 14));
 
-        _blocks.add(new Trap(3, 0));
-        _blocks.add(new Trap(3, 13));
+        _blocks.add(new Hole(3, 0));
+        _blocks.add(new Hole(3, 14));
 
-        _blocks.add(new Trap(4, 0));
-        _blocks.add(new Trap(4, 1));
-        _blocks.add(new Trap(4, 2));
+        _blocks.add(new Hole(4, 0));
+        _blocks.add(new Hole(4, 1));
+        _blocks.add(new Hole(4, 2));
         _blocks.add(new Trap(4, 3));
-        _blocks.add(new Trap(4, 4));
-        _blocks.add(new Trap(4, 5));
-        _blocks.add(new Trap(4, 6));
         _blocks.add(new Trap(4, 7));
-        _blocks.add(new Trap(4, 8));
-        _blocks.add(new Trap(4, 9));
-        _blocks.add(new Trap(4, 10));
-        _blocks.add(new Trap(4, 13));
+        _blocks.add(new Hole(4, 8));
+        _blocks.add(new Hole(4, 9));
+        _blocks.add(new Hole(4, 10));
+        _blocks.add(new Hole(4, 11));
+        _blocks.add(new Hole(4, 14));
 
-        _blocks.add(new Trap(5, 0));
-        _blocks.add(new Trap(5, 13));
+        _blocks.add(new Hole(5, 0));
+        _blocks.add(new Hole(5, 14));
 
-        _blocks.add(new Trap(6, 0));
-        _blocks.add(new Trap(6, 13));
+        _blocks.add(new Hole(6, 0));
+        _blocks.add(new Hole(6, 14));
 
-        _blocks.add(new Trap(7, 0));
-        _blocks.add(new Trap(7, 1));
-        _blocks.add(new Trap(7, 2));
-        _blocks.add(new Trap(7, 5));
-        _blocks.add(new Trap(7, 6));
-        _blocks.add(new Trap(7, 9));
-        _blocks.add(new Trap(7, 10));
-        _blocks.add(new Trap(7, 11));
+        _blocks.add(new Hole(7, 0));
+        _blocks.add(new Hole(7, 4));
+        _blocks.add(new Hole(7, 5));
+        _blocks.add(new Hole(7, 6));
+        _blocks.add(new Hole(7, 7));
+        _blocks.add(new Hole(7, 8));
+        _blocks.add(new Hole(7, 9));
+        _blocks.add(new Hole(7, 10));
+        _blocks.add(new Hole(7, 11));
         _blocks.add(new Trap(7, 12));
         _blocks.add(new Trap(7, 13));
+        _blocks.add(new Hole(7, 14));
 
-        _blocks.add(new Trap(8, 0));
-        _blocks.add(new Trap(8, 5));
-        _blocks.add(new Trap(8, 9));
-        _blocks.add(new Trap(8, 13));
+        _blocks.add(new Hole(8, 0));
+        _blocks.add(new Hole(8, 4));
+        _blocks.add(new Hole(8, 8));
+        _blocks.add(new Hole(8, 11));
+        _blocks.add(new Hole(8, 12));
+        _blocks.add(new Hole(8, 13));
+        _blocks.add(new Hole(8, 14));
 
-        _blocks.add(new Trap(9, 0));
-        _blocks.add(new Trap(9, 5));
-        _blocks.add(new Trap(9, 9));
-        _blocks.add(new Trap(9, 13));
+        _blocks.add(new Hole(9, 0));
+        _blocks.add(new Hole(9, 4));
+        _blocks.add(new Hole(9, 7));
+        _blocks.add(new Hole(9, 8));
+        _blocks.add(new Hole(9, 14));
 
-        _blocks.add(new Trap(10, 0));
-        _blocks.add(new Trap(10, 5));
-        _blocks.add(new Trap(10, 9));
-        _blocks.add(new Trap(10, 13));
+        _blocks.add(new Hole(10, 0));
+        _blocks.add(new Hole(10, 4));
+        _blocks.add(new Hole(10, 14));
 
-        _blocks.add(new Trap(11, 0));
-        _blocks.add(new Trap(11, 5));
-        _blocks.add(new Trap(11, 9));
-        _blocks.add(new Trap(11, 13));
+        _blocks.add(new Hole(11, 0));
+        _blocks.add(new Hole(11, 3));
+        _blocks.add(new Hole(11, 4));
+        _blocks.add(new Hole(11, 11));
+        _blocks.add(new Hole(11, 14));
 
-        _blocks.add(new Trap(12, 0));
-        _blocks.add(new Trap(12, 1));
-        _blocks.add(new Trap(12, 2));
-        _blocks.add(new Trap(12, 3));
-        _blocks.add(new Trap(12, 4));
-        _blocks.add(new Trap(12, 5));
-        _blocks.add(new Trap(12, 9));
-        _blocks.add(new Trap(12, 8));
-        _blocks.add(new Trap(12, 13));
+        _blocks.add(new Hole(12, 0));
+        _blocks.add(new Hole(12, 3));
+        _blocks.add(new Hole(12, 7));
+        _blocks.add(new Hole(12, 8));
+        _blocks.add(new Hole(12, 9));
+        _blocks.add(new Hole(12, 10));
+        _blocks.add(new Hole(12, 11));
+        _blocks.add(new Hole(12, 14));
 
-        _blocks.add(new Trap(13, 0));
-        _blocks.add(new Trap(13, 8));
-        _blocks.add(new Trap(13, 13));
+        _blocks.add(new Hole(13, 0));
+        _blocks.add(new Hole(13, 3));
+        _blocks.add(new Hole(13, 11));
+        _blocks.add(new Hole(13, 14));
 
-        _blocks.add(new Trap(14, 0));
-        _blocks.add(new Trap(14, 8));
-        _blocks.add(new Trap(14, 13));
+        _blocks.add(new Hole(14, 0));
+        _blocks.add(new Hole(14, 3));
+        _blocks.add(new Hole(14, 4));
+        _blocks.add(new Hole(14, 11));
+        _blocks.add(new Hole(14, 14));
 
-        _blocks.add(new Trap(15, 0));
-        _blocks.add(new Trap(15, 8));
-        _blocks.add(new Trap(15, 13));
+        _blocks.add(new Hole(15, 0));
+        _blocks.add(new Hole(15, 4));
+        _blocks.add(new Hole(15, 8));
+        _blocks.add(new Hole(15, 9));
+        _blocks.add(new Hole(15, 10));
+        _blocks.add(new Hole(15, 11));
+        _blocks.add(new Hole(15, 14));
 
-        _blocks.add(new Trap(16, 0));
-        _blocks.add(new Trap(16, 4));
-        _blocks.add(new Trap(16, 5));
-        _blocks.add(new Trap(16, 6));
-        _blocks.add(new Trap(16, 7));
-        _blocks.add(new Trap(16, 8));
-        _blocks.add(new Trap(16, 9));
-        _blocks.add(new Trap(16, 13));
+        _blocks.add(new Hole(16, 0));
+        _blocks.add(new Hole(16, 8));
+        _blocks.add(new Hole(16, 14));
 
-        _blocks.add(new Trap(17, 0));
-        _blocks.add(new Trap(17, 13));
+        _blocks.add(new Hole(17, 0));
+        _blocks.add(new Hole(17, 8));
+        _blocks.add(new Hole(17, 14));
 
-        _blocks.add(new Trap(18, 0));
+        _blocks.add(new Hole(18, 0));
+        _blocks.add(new Trap(18, 2));
+        _blocks.add(new Hole(18, 8));
+        _blocks.add(new Hole(18, 11));
+        _blocks.add(new Trap(18, 12));
         _blocks.add(new Trap(18, 13));
+        _blocks.add(new Hole(18, 14));
 
-        _blocks.add(new Trap(19, 0));
-        _blocks.add(new Trap(19, 1));
-        _blocks.add(new Trap(19, 2));
-        _blocks.add(new Trap(19, 3));
-        _blocks.add(new Trap(19, 4));
-        _blocks.add(new Trap(19, 5));
-        _blocks.add(new Trap(19, 6));
-        _blocks.add(new Trap(19, 7));
-        _blocks.add(new Trap(19, 8));
-        _blocks.add(new Trap(19, 9));
-        _blocks.add(new Trap(19, 10));
-        _blocks.add(new Trap(19, 11));
-        _blocks.add(new Trap(19, 12));
-        _blocks.add(new Trap(19, 13));
+        _blocks.add(new Hole(19, 0));
+        _blocks.add(new Hole(19, 1));
+        _blocks.add(new Hole(19, 2));
+        _blocks.add(new Hole(19, 3));
+        _blocks.add(new Hole(19, 4));
+        _blocks.add(new Hole(19, 5));
+        _blocks.add(new Hole(19, 6));
+        _blocks.add(new Hole(19, 7));
+        _blocks.add(new Hole(19, 8));
+        _blocks.add(new Hole(19, 9));
+        _blocks.add(new Hole(19, 10));
+        _blocks.add(new Hole(19, 11));
+        _blocks.add(new Hole(19, 12));
+        _blocks.add(new Hole(19, 13));
+        _blocks.add(new Hole(19, 14));
 
         Start blockStart = new Start(2, 2);
         _ball.initStart(new RectF(blockStart.getRectangle()));
         _blocks.add(blockStart);
 
-        _blocks.add(new End(8, 11));
+        _blocks.add(new End(18, 9));
 
         return _blocks;
     }

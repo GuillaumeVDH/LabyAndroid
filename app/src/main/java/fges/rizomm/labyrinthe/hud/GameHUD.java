@@ -11,9 +11,6 @@ import java.util.List;
 
 import fges.rizomm.labyrinthe.components.ABlock;
 import fges.rizomm.labyrinthe.components.Ball;
-import fges.rizomm.labyrinthe.components.End;
-import fges.rizomm.labyrinthe.components.Start;
-import fges.rizomm.labyrinthe.components.Trap;
 
 
 /**
