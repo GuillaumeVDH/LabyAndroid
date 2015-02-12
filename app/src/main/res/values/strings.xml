@@ -16,6 +16,13 @@
     <string name="menu_about">About</string>
     <string name="menu_exit">Exit</string>
 
-    <string name="settings_button_validate">Valider</string>
+    <string name="game_victory_title">VICTORY!</string>
+    <string name="game_victory_text">You succeed avoiding all the traps!</string>
+    <string name="game_victory_button">Restart</string>
+    <string name="game_defeat_title">GAME OVER!</string>
+    <string name="game_defeat_text">Hmm, you\'re not yet ready to win this challenge. But keep up! Give another try!</string>
+    <string name="game_defeat_button">Try again</string>
+
+    <string name="settings_button_validate">Save</string>
 
 </resources>

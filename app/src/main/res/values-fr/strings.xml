@@ -16,5 +16,12 @@
     <string name="menu_about">À propos</string>
     <string name="menu_exit">Quitter</string>
 
-    <string name="settings_button_validate">Valider</string>
+    <string name="game_victory_title">VICTOIRE!</string>
+    <string name="game_victory_text">Vous avez réussi à éviter tous les pièges, bravo!</string>
+    <string name="game_victory_button">Recommencer</string>
+    <string name="game_defeat_title">FIN!</string>
+    <string name="game_defeat_text">Hmm, vous n\'êtes pas encore prêt. Mais courage! Essayez encore une fois!</string>
+    <string name="game_defeat_button">Réessayer</string>
+
+    <string name="settings_button_validate">Enregistrer</string>
 </resources>

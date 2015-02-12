@@ -159,7 +159,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
                 }
 
                 try {
-                    Thread.sleep(2);
+                    Thread.sleep(20);
                 } catch (InterruptedException e ) {}
             }
         }

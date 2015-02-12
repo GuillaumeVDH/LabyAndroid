@@ -52,29 +52,6 @@ public class GameActivity extends Activity {
         _gameEngine.stopSensor();
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_game, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @Override
     public Dialog onCreateDialog (int id) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -82,9 +59,9 @@ public class GameActivity extends Activity {
             case 1:
                 _gameEngine.stopSensor();
                 builder.setCancelable(false)
-                        .setTitle("VICTORY!")
-                        .setMessage("You succeed avoing all the traps! ")
-                        .setNeutralButton("Restart", new DialogInterface.OnClickListener() {
+                        .setTitle(getString(R.string.game_victory_title))
+                        .setMessage(getString(R.string.game_victory_text))
+                        .setNeutralButton(getString(R.string.game_victory_button), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 _gameEngine.reset();
@@ -96,9 +73,9 @@ public class GameActivity extends Activity {
             case 0:
                 _gameEngine.stopSensor();
                 builder.setCancelable(false)
-                        .setTitle("GAME OVER!")
-                        .setMessage("You're not yet ready for victory. But keep up, give another try!")
-                        .setNeutralButton("Try again", new DialogInterface.OnClickListener() {
+                        .setTitle(getString(R.string.game_defeat_title))
+                        .setMessage(getString(R.string.game_defeat_text))
+                        .setNeutralButton(getString(R.string.game_defeat_button), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 _gameEngine.reset();
@@ -107,5 +84,11 @@ public class GameActivity extends Activity {
                         });
         }
         return builder.create();
+    }
+
+    @Override
+    public void onPrepareDialog (int id, Dialog box) {
+        // When a dialog box is called
+        _gameEngine.stopSensor();
     }
 }
