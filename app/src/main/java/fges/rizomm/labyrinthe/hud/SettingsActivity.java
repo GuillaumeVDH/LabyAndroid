@@ -51,6 +51,7 @@ public class SettingsActivity extends Activity implements View.OnClickListener  
         if(v.getId() == R.id.settings_button_validate)
         {
 
+            this.finish();
         }
     }
 
