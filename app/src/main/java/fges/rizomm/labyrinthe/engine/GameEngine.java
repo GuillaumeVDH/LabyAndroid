@@ -128,7 +128,8 @@ public class GameEngine {
         _blocks.add(new Hole(4, 0));
         _blocks.add(new Hole(4, 1));
         _blocks.add(new Hole(4, 2));
-        _blocks.add(new Trap(4, 3));
+        _blocks.add(new Hole(4, 3));
+        _blocks.add(new Trap(4, 4));
         _blocks.add(new Trap(4, 7));
         _blocks.add(new Hole(4, 8));
         _blocks.add(new Hole(4, 9));

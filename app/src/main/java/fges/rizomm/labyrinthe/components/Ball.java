@@ -23,9 +23,9 @@ public class Ball {
     //Speed
     private float _speedX;
     private float _speedY;
-    private static final float MAX_SPEED = 1f;
-    private static final float BOUNCE = 2f;
-    private static final float SPEED_REDUCER = 5f;
+    private static final float MAX_SPEED = 1.5f;
+    private static final float BOUNCE = 1f;
+    private static final float SPEED_REDUCER = 0.3f;
 
     //Color
     private int _color = Color.BLUE;
@@ -150,10 +150,8 @@ public class Ball {
         _X = previousX;
         _Y = previousY;
 
-        if(_speedX > _speedY)
-            _speedX = - Math.abs(_speedY);
-        else if(_speedX < _speedY)
-            _speedY = - Math.abs(_speedY);
+        _speedX = - Math.abs(_speedX);
+        _speedY = - Math.abs(_speedY);
 
         //_speedX = - Math.abs(_speedY);
         //_speedY = - Math.abs(_speedY);
