@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import java.io.Console;
 import java.util.List;
 
 import fges.rizomm.labyrinthe.components.ABlock;
@@ -20,7 +21,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
     private Ball _ball;
     private GameDraw _thread;
-    private SurfaceHolder _surfaceHolder;
+    private final SurfaceHolder _surfaceHolder;
     private Paint _paint;
     private List<ABlock> _blocks = null;
     /*
@@ -102,7 +103,9 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
             try {
                 _thread.join();
                 retry = false;
-            } catch (InterruptedException e) {}
+            } catch (InterruptedException e) {
+                System.out.println("Exception: " + e.getMessage());
+            }
         }
     }
 
@@ -122,7 +125,7 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
             //Draw the ball
             if (_ball != null) {
                 _paint.setColor(Color.parseColor("#448AFF"));
-                canvas.drawCircle(_ball.getX(), _ball.getY(), _ball.RADIUS, _paint);
+                canvas.drawCircle(_ball.getX(), _ball.getY(), Ball.RADIUS, _paint);
             }
         }
     }
@@ -160,7 +163,9 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
                 try {
                     Thread.sleep(20);
-                } catch (InterruptedException e ) {}
+                } catch(InterruptedException e ) {
+                    System.out.println("Exception: " + e.getMessage());
+                }
             }
         }
     }

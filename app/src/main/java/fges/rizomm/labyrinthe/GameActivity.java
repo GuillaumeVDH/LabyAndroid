@@ -41,7 +41,7 @@ public class GameActivity extends Activity {
         try {
             ball.setMaxSpeed(ballSpeedValue);
         } catch (IllegalArgumentException e ) {
-
+            ball.setMaxSpeed(1);
         }
         _gameHUD.setBall(ball);
         _gameEngine.setBall(ball);

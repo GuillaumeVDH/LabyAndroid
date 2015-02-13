@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import fges.rizomm.labyrinthe.R;
 
@@ -53,14 +54,20 @@ public class SettingsActivity extends Activity implements View.OnClickListener  
         {
             //take the value from the edittext
             EditText editText = (EditText) findViewById(R.id.settings_Ball_Speed);
-            int ball_speed = Integer.valueOf(editText.getText().toString());
+            if (editText.getText().toString().matches("")) {
+                Toast.makeText(this, "You did not enter a value", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else {
+                int ball_speed = Integer.valueOf(editText.getText().toString());
 
-            //put it in Sharedpref
-            SharedPreferences sharedPreferences_ball_speed = PreferenceManager.getDefaultSharedPreferences(this);
-            SharedPreferences.Editor editor = sharedPreferences_ball_speed.edit();
-            editor.putInt("ball_speed",ball_speed);
-            editor.commit();
-            this.finish();
+                //put it in Sharedpref
+                SharedPreferences sharedPreferences_ball_speed = PreferenceManager.getDefaultSharedPreferences(this);
+                SharedPreferences.Editor editor = sharedPreferences_ball_speed.edit();
+                editor.putInt("ball_speed", ball_speed);
+                editor.commit();
+                this.finish();
+            }
         }
     }
 
