@@ -24,5 +24,7 @@
     <string name="game_defeat_text">Hmm, vous n\'êtes pas encore prêt. Mais courage! Essayez encore une fois!</string>
     <string name="game_defeat_button">Réessayer</string>
 
+    <string name="game_settings_speed_no_value">Vous n\'avez pas entrer de valeur</string>
+
     <string name="settings_button_validate">Enregistrer</string>
 </resources>

@@ -55,7 +55,7 @@ public class SettingsActivity extends Activity implements View.OnClickListener  
             //take the value from the edittext
             EditText editText = (EditText) findViewById(R.id.settings_Ball_Speed);
             if (editText.getText().toString().matches("")) {
-                Toast.makeText(this, "You did not enter a value", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.game_settings_speed_no_value), Toast.LENGTH_SHORT).show();
                 return;
             }
             else {

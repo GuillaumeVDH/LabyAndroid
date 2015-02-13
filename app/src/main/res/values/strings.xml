@@ -25,6 +25,8 @@
     <string name="game_defeat_text">Hmm, you\'re not yet ready to win this challenge. But keep up! Give another try!</string>
     <string name="game_defeat_button">Try again</string>
 
+    <string name="game_settings_speed_no_value">You did not enter a value</string>
+
     <string name="settings_button_validate">Save</string>
 
 </resources>
