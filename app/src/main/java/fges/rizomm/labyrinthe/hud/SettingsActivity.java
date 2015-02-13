@@ -1,12 +1,15 @@
 package fges.rizomm.labyrinthe.hud;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import fges.rizomm.labyrinthe.R;
 
@@ -20,9 +23,7 @@ public class SettingsActivity extends Activity implements View.OnClickListener  
 
         mValidateButton = (Button) findViewById(R.id.settings_button_validate);
         mValidateButton.setOnClickListener(this);
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -50,7 +51,15 @@ public class SettingsActivity extends Activity implements View.OnClickListener  
     public void onClick(View v) {
         if(v.getId() == R.id.settings_button_validate)
         {
+            //take the value from the edittext
+            EditText editText = (EditText) findViewById(R.id.settings_Ball_Speed);
+            int ball_speed = Integer.valueOf(editText.getText().toString());
 
+            //put it in Sharedpref
+            SharedPreferences sharedPreferences_ball_speed = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+            SharedPreferences.Editor editor = sharedPreferences_ball_speed.edit();
+            editor.putInt("ball_speed",ball_speed);
+            editor.commit();
             this.finish();
         }
     }

@@ -23,7 +23,8 @@ public class Ball {
     //Speed
     private float _speedX;
     private float _speedY;
-    private static final float MAX_SPEED = 1.5f;
+    private float _maxSpeed;
+    //private static final float  = 1.5f;
     private static final float BOUNCE = 1f;
     private static final float SPEED_REDUCER = 0.3f;
 
@@ -45,6 +46,7 @@ public class Ball {
     public Ball()
     {
         _rCollision = new RectF();
+        _maxSpeed = 1f;
     }
 
 
@@ -77,6 +79,16 @@ public class Ball {
             _speedY = -_speedY / RADIUS;
         } else
             _X = x;
+    }
+
+    public void setMaxSpeed(int value)
+    {
+        if(value > 0 && value <= 100)
+        {
+            _maxSpeed = value;
+        } else {
+            throw new IllegalArgumentException("Bad maximum speed value for the ball in settings. Must be between 1 and 100. Applying default value = 1");
+        }
     }
 
     public void setY(float y)
@@ -112,15 +124,15 @@ public class Ball {
         _speedX += x / SPEED_REDUCER;
         _speedY += y / SPEED_REDUCER;
 
-        if(_speedX > MAX_SPEED)
-            _speedX = MAX_SPEED;
-        else if(_speedX < -MAX_SPEED)
-            _speedX = -MAX_SPEED;
+        if(_speedX > _maxSpeed)
+            _speedX = _maxSpeed;
+        else if(_speedX < -_maxSpeed)
+            _speedX = -_maxSpeed;
 
-        if(_speedY > MAX_SPEED)
-            _speedY = MAX_SPEED;
-        else if(_speedY < -MAX_SPEED)
-            _speedY = -MAX_SPEED;
+        if(_speedY > _maxSpeed)
+            _speedY = _maxSpeed;
+        else if(_speedY < -_maxSpeed)
+            _speedY = -_maxSpeed;
 
         this.setX(_X + _speedY);
         this.setY(_Y + _speedX);

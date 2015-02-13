@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -21,16 +24,25 @@ public class GameActivity extends Activity {
     private GameEngine _gameEngine = null;
     private GameHUD _gameHUD = null;
     private List<ABlock> _blocks = null;
+    private SharedPreferences _sharedPreferences = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        _sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         super.onCreate(savedInstanceState);
         _gameHUD = new GameHUD(this);
         setContentView(_gameHUD);
 
         _gameEngine = new GameEngine(this);
 
+        int ballSpeedValue = _sharedPreferences.getInt("ball_speed",0) ;
+
         Ball ball = new Ball();
+        try {
+            ball.setMaxSpeed(ballSpeedValue);
+        } catch (IllegalArgumentException e ) {
+
+        }
         _gameHUD.setBall(ball);
         _gameEngine.setBall(ball);
 
@@ -55,8 +67,7 @@ public class GameActivity extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         switch(id) {
             case 1:
-                _gameEngine.stopSensor();
-                builder.setCancelable(false)
+                builder.setCancelable(true)
                         .setTitle(getString(R.string.game_victory_title))
                         .setMessage(getString(R.string.game_victory_text))
                         .setNeutralButton(getString(R.string.game_victory_button), new DialogInterface.OnClickListener() {
@@ -67,10 +78,8 @@ public class GameActivity extends Activity {
                             }
                         });
                 break;
-
             case 0:
-                _gameEngine.stopSensor();
-                builder.setCancelable(false)
+                builder.setCancelable(true)
                         .setTitle(getString(R.string.game_defeat_title))
                         .setMessage(getString(R.string.game_defeat_text))
                         .setNeutralButton(getString(R.string.game_defeat_button), new DialogInterface.OnClickListener() {
@@ -79,8 +88,9 @@ public class GameActivity extends Activity {
                                 _gameEngine.reset();
                                 _gameEngine.resume();
                             }
-                        });
-        }
+                        }
+                        );
+                }
         return builder.create();
     }
 
