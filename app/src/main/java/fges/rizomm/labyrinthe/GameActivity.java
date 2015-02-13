@@ -34,10 +34,8 @@ public class GameActivity extends Activity {
         _gameHUD.setBall(ball);
         _gameEngine.setBall(ball);
 
-
         _blocks = _gameEngine.buildGame();
         _gameHUD.setBlocks(_blocks);
-
     }
 
     @Override

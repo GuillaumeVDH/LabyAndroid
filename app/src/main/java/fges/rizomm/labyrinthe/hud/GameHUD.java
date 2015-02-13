@@ -108,22 +108,22 @@ public class GameHUD extends SurfaceView implements SurfaceHolder.Callback {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawColor(Color.parseColor("#727272"));
+        if(_thread.getDraw()) {
+            canvas.drawColor(Color.parseColor("#727272"));
 
-        //Draw the game
-        if(_blocks != null)
-        {
-            for(ABlock block : _blocks)
-            {
-                _paint.setColor(block.getColor());
-                canvas.drawRect(block.getRectangle(), _paint);
+            //Draw the game
+            if (_blocks != null) {
+                for (ABlock block : _blocks) {
+                    _paint.setColor(block.getColor());
+                    canvas.drawRect(block.getRectangle(), _paint);
+                }
             }
-        }
 
-        //Draw the ball
-        if(_ball != null) {
-            _paint.setColor(Color.parseColor("#448AFF"));
-            canvas.drawCircle(_ball.getX(), _ball.getY(), _ball.RADIUS, _paint);
+            //Draw the ball
+            if (_ball != null) {
+                _paint.setColor(Color.parseColor("#448AFF"));
+                canvas.drawCircle(_ball.getX(), _ball.getY(), _ball.RADIUS, _paint);
+            }
         }
     }
 

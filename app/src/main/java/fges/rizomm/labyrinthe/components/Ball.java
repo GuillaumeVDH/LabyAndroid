@@ -94,25 +94,16 @@ public class Ball {
     }
 
     /* SPEED */
-    // Called when boucing against an horizontal wall
+    // Called when boucing against an horizontal object
     private void switchSpeedX()
     {
         _speedX = -_speedX;
     }
 
-    // Called when boucing against a vertical wall
+    // Called when boucing against a vertical object
     private void switchSpeedY()
     {
         _speedY = -_speedY;
-    }
-
-    /* SCREEN SIZE */
-    public void setHeight(int height) {
-        _screenHeight = height;
-    }
-
-    public void setWidth(int width) {
-        _screenWidth = width;
     }
 
     /* UPDATE */
@@ -152,8 +143,14 @@ public class Ball {
 
         _speedX = - Math.abs(_speedX);
         _speedY = - Math.abs(_speedY);
+    }
 
-        //_speedX = - Math.abs(_speedY);
-        //_speedY = - Math.abs(_speedY);
+    /* SCREEN SIZE */
+    public void setHeight(int height) {
+        _screenHeight = height;
+    }
+
+    public void setWidth(int width) {
+        _screenWidth = width;
     }
 }

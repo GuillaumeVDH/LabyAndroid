@@ -26,7 +26,6 @@ public class GameEngine {
     private List<ABlock> _blocks = new ArrayList<ABlock>();
     private GameActivity _activity = null;
 
-    //Init sensors
     private SensorManager _sensorManager = null;
     private Sensor _sensor = null;
 
