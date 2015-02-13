@@ -28,7 +28,7 @@ public class GameActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        _sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        _sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         super.onCreate(savedInstanceState);
         _gameHUD = new GameHUD(this);
         setContentView(_gameHUD);

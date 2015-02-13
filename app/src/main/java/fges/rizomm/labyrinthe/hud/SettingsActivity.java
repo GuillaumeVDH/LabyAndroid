@@ -56,7 +56,7 @@ public class SettingsActivity extends Activity implements View.OnClickListener  
             int ball_speed = Integer.valueOf(editText.getText().toString());
 
             //put it in Sharedpref
-            SharedPreferences sharedPreferences_ball_speed = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+            SharedPreferences sharedPreferences_ball_speed = PreferenceManager.getDefaultSharedPreferences(this);
             SharedPreferences.Editor editor = sharedPreferences_ball_speed.edit();
             editor.putInt("ball_speed",ball_speed);
             editor.commit();
